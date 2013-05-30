@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="jquery.mobile-1.3.1.min.css" />
+<script src="jquery-1.9.1.min.js"></script>
+<script src="jquery.mobile-1.3.1.min.js"></script>
+
+
+<head>
+	
+	<meta charset="utf-8" />
+	<title>Mi primera aplicación</title>
+</head>
+
+<body>
+
+	<div data-role="page" id="menu_principal">
+
+		<div data-role="panel" id="panel_lateral">
+			<h1>JQuery Mobile</h1>
+			<br />
+			<p>Es un producto que está basado en el propio framework Javascript jQuery. Por tanto, aquellas personas que ya conocen jQuery no van a tener que aprender nada nuevo, sino aplicar sus conocimientos y desarrollar fácilmente aplicaciones para móviles. Esto significa una gran ventaja, puesto que hay muchas personas que conocen jQuery y que van a poder pasarse sin prácticamente ningún problema al desarrollo para dispositivos. </p>		
+			<br />
+			<p>jQuery Mobile no se trata simplemente de una capa para realizar código Javascript que funcione en todos los navegadores, sino un conjunto de herramientas que simplificará el proceso de crear páginas para móviles, desde la escritura del propio código HTML, la maquetación con CSS y la creación de efectos dinámicos con Javascript. </p>
+			<br />
+			<p>Un momento: ¿como nos va a ayudar a hacer HTML jQuery Mobile? No es que vayas a escribir código HTML desde jQuery, sino que, al incluir jQuery Mobile tu código HTML básico será optimizado para realizar diversos comportamientos dinámicos en los navegadores móviles, de manera automática. Además, muchas cosas del propio framework las vas a poder configurar directamente a través de atributos HTML. </p>
+			<br />			
+			<p>Bueno ¿Y qué hay de CSS? Pues tampoco es que tengas que escribir tu código CSS desde jQuery Mobile, sino que este framework dispondrá diversas herramientas CSS, también de manera automática, que podrás utilizar en tus desarrollos. Por poner dos ejemplos, con este framework tus componentes de formularios se estilizarán de manera automática, sustituyendo los feos elementos nativos de los navegadores de dispositivos móviles.</p>
+			<br />			
+			<p>Debajo de estas lineas esta un enlace hacia la documentación utilizada para llevar a cabo el proyecto.  </p>
+			<br />
+			<ul data-role="listview">
+				<li><a href="http://view.jquerymobile.com/1.3.1/dist/demos/">Documentación</a></li>
+			</ul>
+		</div>
+		
+
+		<div data-role="header" style="overflow:hidden;" data-position="fixed">
+			<h1>Bienvenid@</h1>
+			<a href="#panel_lateral" class="ui-btn-left">JQUERY</a>
+		</div>
+		
+		<div  data-role="content">
+			<input type='text' id='introduceTexto' value='¡Hola Mundo!' />
+			<button id='boton'>Introduce un comentario</button>
+		</div>
+
+		<div data-role="footer" style="overflow:hidden;" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu_principal">Comentario</a></li>
+					<li><a href="#menu_secundario">Calculadora</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="menu_secundario">
+		
+		<div data-role="header" style="overflow:hidden;" data-position="fixed">
+			<h1>Calculadora</h1>
+		</div>
+
+		<div id="menu_secundario" data-role="content">
+			<p>Introduce los valores</p>
+			<input type='text' id='txcalculadora'  />
+			<button id='btcalcular'>calcular</button>
+		</div>
+
+		<div data-role="footer" style="overflow:hidden;" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#menu_principal">Comentario</a></li>
+					<li><a href="#menu_secundario">Calculadora</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>

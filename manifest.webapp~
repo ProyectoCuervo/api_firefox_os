@@ -1,0 +1,14 @@
+{
+	"name": "Aplicacion Ivan",
+	"description": "Intercambio de opinion",
+	"launch_path": "/index.html",
+	"icons": {
+		"128": "/icon.png"
+	},
+	"developer":{
+		"name": "ivan salgado cabrero",
+		"url": "http://asirdecroly.es"
+		},
+	"default_locale": "en"
+	
+}

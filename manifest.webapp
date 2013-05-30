@@ -1,0 +1,16 @@
+{
+	"name": "Aplicacion",
+	"description": "Mi primera aplicación para Firefox OS",
+	"launch_path": "/index.html",
+	"icons": 
+	{
+		"128": "/icon.png"
+	},
+	"developer":
+	{
+		"name": "ivan salgado cabrero",
+		"url": "http://www.asirdecroly.es"
+	},
+	"default_locale": "en"
+	
+}

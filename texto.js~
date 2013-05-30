@@ -1,0 +1,9 @@
+// Primero hablo de los elementos que forman la interfaz de usuario
+var button = document.getElementById('boton');
+var txtInput = document.getElementById('entrada_texto');
+// Continuo vinculando un evento al pulsar el boton
+button.addEvenListener('click', function(){
+	var text = txtInput.value;
+	// En respuesta mostrara un recuadro con la variable "text" ya mencionada
+	alert(text);
+})

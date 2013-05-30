@@ -1,0 +1,12 @@
+// Refer to UI elements
+// Definimos los elementos de interfaz del usuario
+var button = document.getElementById('boton');
+var txtInput = document.getElementById('introduceTexto');
+// Bind click event of the button with an event listener
+// Definimos los elementos de interfaz del usuario
+button.addEventListener('click',function(){
+	var text = txtInput.value;
+	// Show alert box with this text
+	// Muestra una caja con el texto anterior
+	alert(text);
+})
